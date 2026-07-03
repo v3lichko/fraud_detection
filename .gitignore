@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# raw/processed data is large and reproducible via scripts/download_data.py
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# trained artifacts are reproducible via src/fraud_detection/train.py
+models/*.joblib
+
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
